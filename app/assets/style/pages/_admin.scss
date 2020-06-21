@@ -1,0 +1,123 @@
+.icon-plus {
+    color: $primary;
+    font-weight: bold;
+}
+
+.icon-downward {
+    color: $primary;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: 2px;
+}
+
+.table-style thead th {
+    padding: 0.25rem 0;
+    border-top-color: transparent;
+    border-bottom: 1px solid #121212;
+}
+
+.table-style tbody th {
+    padding: 1rem 0;
+    border-top: none;
+    border-bottom: 1px solid #cdddcd;
+}
+
+.table-style td {
+    padding: 1rem 0;
+    border-top: none;
+    border-bottom: 1px solid #cdddcd;
+    vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+    background-color: $secondary;
+}
+
+.table-style tbody .material-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    &:hover {
+        color: $primary;
+    }
+}
+
+.pagination .material-icons {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: 2px;
+}
+
+.page-link {
+    border-color: $primary;
+    &:hover {
+        color: #fff;
+        background-color: $primary;
+        border-color: $primary;
+    }
+}
+
+// model
+.modal-body {
+    padding: 2rem;
+    .pic {
+        width: 140px;
+        height: 140px;
+        overflow: hidden;
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .content {
+        width: calc(100% - 140px);
+        li {
+            line-height: 1.2;
+        }
+    }
+    .user-name {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .user-email {
+        font-size: 14px;
+    }
+    .status {
+        padding: 4px 8px;
+        background-color: $secondary;
+        font-size: 14px;
+    }
+}
+
+.status-wrapper {
+    &.material-icons {
+        color: $primary;
+        cursor: pointer;
+    }
+}
+
+.model-btn-close {
+    position: absolute;
+    top: 26px;
+    right: 32px;
+    font-size: 32px;
+}
+
+.operation-wrapper {
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -32px;
+    transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    &.open {
+        visibility: visible;
+        opacity: 1;
+        position: relative;
+        top: 0;
+        margin-top: 32px;
+    }
+}

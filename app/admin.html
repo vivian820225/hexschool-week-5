@@ -1,0 +1,243 @@
+---
+title: Dashboard
+layout: ./app/layout.ejs
+engine: ejs
+current: Admin
+---
+
+<main class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="p-3 d-flex justify-content-between align-items-center">
+                <!-- 頁面主題 -->
+                <div class="d-flex">
+                    <h2 class="page-title mb-2 font-weight-bold">Admin</h2>
+                    <a href="javascript:;" class="d-flex align-items-center font-weight-bold"><span
+                            class="material-icons mr-2 icon-plus">
+                            add
+                        </span>Add New Admin</a>
+                </div>
+                <!-- 搜尋 提醒 -->
+                <div class="d-flex">
+                    <span class="material-icons mr-4">
+                        search
+                    </span>
+                    <span class="material-icons">
+                        notifications_active
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="table-responsive p-3">
+                <table class="table table-hover table-style mb-4">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID<span class="material-icons icon-downward ml-1">
+                                    arrow_downward
+                                </span></th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Verified</th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">#1</td>
+                            <td>Emir Wicks</td>
+                            <td>emir.wicks@mail.com</td>
+                            <td>Yes</td>
+                            <td><span class="material-icons" data-toggle="modal" data-target="#view">
+                                    visibility
+                                </span></td>
+                            <td><span class="material-icons">
+                                    create
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#2</td>
+                            <td>Zaina Goldsmith</td>
+                            <td>zaina.goldsmith@mail.com</td>
+                            <td>Yes</td>
+                            <td class="text-align-right"><span class="material-icons">
+                                    visibility
+                                </span></td>
+                            <td><span class="material-icons">
+                                    create
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#3</td>
+                            <td>Mahima Lopez</td>
+                            <td>Mahima.Lopez@mail.com</td>
+                            <td>Yes</td>
+                            <td><span class="material-icons">
+                                    visibility
+                                </span></td>
+                            <td><span class="material-icons">
+                                    create
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#4</td>
+                            <td>Pharrell Murray</td>
+                            <td>Pharrell.Murray@mail.com</td>
+                            <td>Yes</td>
+                            <td><span class="material-icons">
+                                    visibility
+                                </span></td>
+                            <td><span class="material-icons">
+                                    create
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#5</td>
+                            <td>Annika Mcbride</td>
+                            <td>Annika.Mcbride@mail.com</td>
+                            <td>Yes</td>
+                            <td><span class="material-icons">
+                                    visibility
+                                </span></td>
+                            <td><span class="material-icons">
+                                    create
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#6</td>
+                            <td>Fatimah Clark</td>
+                            <td>Fatimah.Clark@mail.com</td>
+                            <td>Yes</td>
+                            <td><span class="material-icons">
+                                    visibility
+                                </span></td>
+                            <td><span class="material-icons">
+                                    create
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#7</td>
+                            <td>Klaudia Rhodes</td>
+                            <td>Klaudia.Rhodes@mail.com</td>
+                            <td>Yes</td>
+                            <td><span class="material-icons">
+                                    visibility
+                                </span></td>
+                            <td><span class="material-icons">
+                                    create
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#8</td>
+                            <td>Tillie Lucero</td>
+                            <td>Tillie.Lucero@mail.com</td>
+                            <td>Yes</td>
+                            <td><span class="material-icons">
+                                    visibility
+                                </span></td>
+                            <td><span class="material-icons">
+                                    create
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#9</td>
+                            <td>Sabrina Stephenson</td>
+                            <td>Sabrina.Stephenson@mail.com</td>
+                            <td>Yes</td>
+                            <td><span class="material-icons">
+                                    visibility
+                                </span></td>
+                            <td><span class="material-icons">
+                                    create
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#10</td>
+                            <td>Annie Smith</td>
+                            <td>Annie.Smith@mail.com</td>
+                            <td>Yes</td>
+                            <td><span class="material-icons">
+                                    visibility
+                                </span></td>
+                            <td><span class="material-icons">
+                                    create
+                                </span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true" class="material-icons">
+                                    navigate_before
+                                </span>
+                                <!-- <span aria-hidden="true">&laquo;</span> -->
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true" class="material-icons">
+                                    navigate_next
+                                </span>
+                                <!-- <span aria-hidden="true">&raquo;</span> -->
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="view" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="d-flex">
+                        <div class="pic mr-4">
+                            <img src="./assets/images/emir.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li class="mb-1">#1</li>
+                                <li>Admin</li>
+                                <li class="user-name mb-1">Emir Wicks</li>
+                                <li class="user-email text-muted mb-3">emir.wicks@mail.com</li>
+                                <li>
+                                    <div class="status-wrapper d-flex justify-content-between">
+                                        <span class="status">Verified</span>
+                                        <span class="material-icons operation-toggle">
+                                            keyboard_arrow_down
+                                        </span>
+                                    </div>
+                                    <div class="operation-wrapper">
+                                        <div class="btn-group d-flex justify-content-end">
+                                            <button type="button" class="btn btn-outline-danger mr-3 rounded"
+                                                data-dismiss="modal">Deactivate</button>
+                                            <button type="button" class="btn btn-primary rounded">Edit</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button type="button" class="close model-btn-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</main>

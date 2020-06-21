@@ -1,0 +1,85 @@
+.page-title {
+    padding-right: 46px;
+}
+
+.list-group-item {
+    padding: 0.75rem;
+    color: #121212;
+    &.active {
+        color: inherit;
+        background-color: $secondary;
+        border-color: $secondary;
+    }
+}
+
+.dropdown {
+    &.show > .btn-secondary.dropdown-toggle {
+        background-color: transparent;
+        border-color: transparent;
+    }
+}
+
+.dropdown-btn {
+    padding: 0;
+}
+
+.dropdown-toggle {
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: bold;
+    box-shadow: none;
+    &:hover {
+        background-color: transparent;
+        border-color: transparent;
+    }
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        margin-left: 8px;
+        background-color: transparent;
+        border: none;
+        border-left: 2px solid $primary;
+        border-bottom: 2px solid $primary;
+        transform: rotate(-45deg);
+    }
+}
+
+.card-header {
+    padding: 0.75rem;
+    background-color: $secondary;
+    h5 {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+.card-body {
+    padding: 1rem;
+    .pic {
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+    }
+}
+
+.card-text-space {
+    padding-left: 48px;
+    padding-right: 16px;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.card-list {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.mark {
+    color: $primary;
+    background-color: $secondary;
+    font-family: 'Roboto Mono', monospace, "Helvetica Neue", Arial, sans-serif;
+}

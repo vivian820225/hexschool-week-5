@@ -1,0 +1,175 @@
+---
+title: Dashboard
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main class="main_content container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="p-3 d-flex justify-content-between align-items-center">
+        <!-- 頁面主題 -->
+        <div class="d-flex align-items-center">
+          <h2 class="page-title mb-2 font-weight-bold">Assignment</h2>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              All Courses
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Courses 1</a>
+              <a class="dropdown-item" href="#">Courses 2</a>
+              <a class="dropdown-item" href="#">Courses 3</a>
+            </div>
+          </div>
+        </div>
+        <!-- 搜尋 提醒 -->
+        <div class="d-flex">
+          <span class="material-icons mr-4">
+            search
+          </span>
+          <span class="material-icons">
+            notifications_active
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row px-3">
+    <div class="col-12">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <button type="button" class="btn dropdown-btn font-weight-bold">All (4)</button>
+          <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </div>
+        <a href="#" class="text-muted text-small">2 comments</a>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action border active">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <div class="text-small">Chapter Assignment 2</div>
+            <div class="text-small">4 hrs ago</div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="font-weight-bold">Please check this file…</div>
+            <div class="text-small text-muted">Emily Wang</div>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action border">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <div class="text-small">Chapter Assignment 1</div>
+            <div class="text-small">12 hrs ago</div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="font-weight-bold">My Homework</div>
+            <div class="text-small text-muted">David Xu</div>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action border">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <div class="text-small">Final Assignment</div>
+            <div class="text-small">18 hrs ago</div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="font-weight-bold">Have a problem with this…</div>
+            <div class="text-small text-muted">Tony Wei</div>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action border">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <div class="text-small">Final Assignment</div>
+            <div class="text-small">19 hrs ago</div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="font-weight-bold">Did I do it right?</div>
+            <div class="text-small text-muted">Christina Lin</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-8">
+      <div class="card border mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h5>
+            <span class="text-small d-block mb-1">Chapter Assignment 2 / HTML&CSS</span>
+            Please check this file for me, thanks!
+          </h5>
+          <span class="material-icons">
+            more_vert
+          </span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title d-flex align-items-center">
+            <span class="pic mr-2 rounded-circle"><img src="./assets/images/emilywang.jpeg" alt=""></span>
+            <span class="d-flex flex-column">
+              <strong class="font-weight-bold mb-1">Emily Wang</strong>
+              <small class="text-muted text-small">10:38 AM (4 hours ago)</small>
+            </span>
+          </h5>
+          <div class="card-text-space">
+            <p class="card-text">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question:
+              Why in the following code the height of the <span class="mark">div</span> is bigger than the height of the
+              <span class="mark">img</span> ? There is a gap below the image, but it doesn’t seems to be a
+              padding/margin.</p>
+            <p class="card-text">What is the gap or extra space below image?</p>
+            <a href="#" class="mt-3 btn btn-secondary d-inline-flex align-items-center font-weight-bold pr-3"><span
+                class="material-icons mr-2">
+                attach_file
+              </span>
+              <span>HW-2-David.zip</span></a>
+            <hr>
+          </div>
+          <h5 class="card-title d-flex align-items-center">
+            <span class="pic mr-2 rounded-circle"><img src="./assets/images/andychen.jpeg" alt=""></span>
+            <span class="d-flex flex-column">
+              <strong class="font-weight-bold mb-1">Andy Chen (You)</strong>
+              <small class="text-muted text-small">13:24 AM (1 hours ago)</small>
+            </span>
+          </h5>
+          <div class="card-text-space">
+            <p class="card-text">Hi David, by default, an image is rendered inline, like a letter so it sits on the same
+              line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like
+              g, j, p and q.</p>
+            <br>
+            <p class="card-text"> You can:</p>
+            <br>
+            <ul class="card-text card-list">
+              <li>adjust the <span class="mark">vertical-align</span> of the image to position it elsewhere (e.g. the
+                <span class="mark">middle</span> )</li>
+              <li>change the <span class="mark">display</span> so it isn’t inline.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <a href="#" class="mr-4"><span class="material-icons">
+              navigate_before
+            </span></a>
+          <a href="#"><span class="material-icons">
+              navigate_next
+            </span></a>
+        </div>
+        <div class="btn-group">
+          <a href="#" class="btn btn-outline-primary rounded mr-3">Mark as read</a>
+          <a href="#" class="btn btn-primary rounded">Reply</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
